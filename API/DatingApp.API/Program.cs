@@ -1,5 +1,7 @@
 using System.Text;
 using DatingApp.API.Data;
+using DatingApp.API.Data.Seed;
+using DatingApp.API.Profiles;
 using DatingApp.API.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +23,8 @@ services.AddSwaggerGen();
 services.AddDbContext<DataContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("db")));
 services.AddScoped<ITokenService,TokenService>();
+services.AddScoped<IMemberService,MemberService>();
+services.AddAutoMapper(typeof(UserMapperProfile).Assembly);
 services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -36,7 +40,16 @@ services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 var app = builder.Build();
-
+using var scope = app.Services.CreateScope();
+var serviceProvider = scope.ServiceProvider;
+try{
+    var context = serviceProvider.GetRequiredService<DataContext>();
+    context.Database.Migrate();
+    Seed.SeedUsers(context);
+}catch(Exception ex){
+    var logger = serviceProvider.GetRequiredService<ILogger<Program>>();
+    logger.LogError(ex,"Migration Failed!");
+}
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

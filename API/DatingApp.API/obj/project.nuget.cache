@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "suMp6q9SONJQvGUxR9vTb3/1v+NxGpTizBTb1VC2Pf8ScDlftcR77qnb6YafLcnD64noUBTen4m4dayshp1VoA==",
+  "dgSpecHash": "wjIjLAHrxZxPPtJgznVtCvDkidlKP+EmHPjm+/gHxH38YCBbKJFu898fzFu6C8MNL+IYvpOzLGfiSN2q5Zzc6g==",
   "success": true,
-  "projectFilePath": "/home/pkzero/project/NET/API/DatingApp.API/DatingApp.API.csproj",
+  "projectFilePath": "/home/pkzero/project/NET/FE&BE/API/DatingApp.API/DatingApp.API.csproj",
   "expectedPackageFiles": [
+    "/home/pkzero/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
+    "/home/pkzero/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "/home/pkzero/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/pkzero/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/6.0.9/microsoft.aspnetcore.authentication.jwtbearer.6.0.9.nupkg.sha512",
-    "/home/pkzero/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/home/pkzero/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/pkzero/.nuget/packages/microsoft.data.sqlite.core/6.0.9/microsoft.data.sqlite.core.6.0.9.nupkg.sha512",
     "/home/pkzero/.nuget/packages/microsoft.entityframeworkcore/6.0.9/microsoft.entityframeworkcore.6.0.9.nupkg.sha512",
     "/home/pkzero/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.9/microsoft.entityframeworkcore.abstractions.6.0.9.nupkg.sha512",

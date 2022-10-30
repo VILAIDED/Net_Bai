@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/pkzero/project/NET/API/DatingApp.API/DatingApp.API.csproj": {}
+    "/home/pkzero/project/NET/FE&BE/API/DatingApp.API/DatingApp.API.csproj": {}
   },
   "projects": {
-    "/home/pkzero/project/NET/API/DatingApp.API/DatingApp.API.csproj": {
+    "/home/pkzero/project/NET/FE&BE/API/DatingApp.API/DatingApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/pkzero/project/NET/API/DatingApp.API/DatingApp.API.csproj",
+        "projectUniqueName": "/home/pkzero/project/NET/FE&BE/API/DatingApp.API/DatingApp.API.csproj",
         "projectName": "DatingApp.API",
-        "projectPath": "/home/pkzero/project/NET/API/DatingApp.API/DatingApp.API.csproj",
+        "projectPath": "/home/pkzero/project/NET/FE&BE/API/DatingApp.API/DatingApp.API.csproj",
         "packagesPath": "/home/pkzero/.nuget/packages/",
-        "outputPath": "/home/pkzero/project/NET/API/DatingApp.API/obj/",
+        "outputPath": "/home/pkzero/project/NET/FE&BE/API/DatingApp.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/pkzero/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.9, )"
